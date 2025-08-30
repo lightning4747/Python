@@ -1,0 +1,1 @@
+The Golden Rule: Never use a bare except:. It will catch KeyboardInterrupt (Ctrl+C) and SystemExit, making your program hard to stop. Always specify the exception you expect to catch (except ValueError:) or use except Exception as e: to catch all runtime errors while still allowing the program to be interrupted.
